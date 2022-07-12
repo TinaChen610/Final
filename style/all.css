@@ -169,14 +169,22 @@ img {
 
 .hover-icon:hover i {
   transform: scale(1);
+
 }
 
 /* Modules 縮放影像 -------------------- */
+.hover-scale {
+  overflow: hidden;
+}
 
+.hover-scale:hover > .img-resp {
+  transform: scale(1.2);
+}
 
 /* Modules 轉場 -------------------- */
 .hover-transition::after,
-.hover-transition i {
+.hover-transition i,
+.hover-transition > .img-resp {
   transition-duration: .5s;
 }
 
