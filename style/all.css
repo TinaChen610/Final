@@ -1,0 +1,58 @@
+/* Base ------------------ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, "儷黑 Pro", "微軟正黑體", "新細明體", sans-serif;
+  /* background-color: #000; */
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* Helper ------------------ */
+.mask {
+  overflow: hidden;
+}
+
+.img-resp {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+/* 
+  pdf: #333
+  pf: #dd1f8e
+  ps: #00a7e2
+  dw: #84c922
+  ai: #ee9a10
+  ae: #620294
+*/
+
+/* Modules 覆蓋 -------------------- */
+
+
+/* Modules 圖標 -------------------- */
+
+
+/* Modules 縮放影像 -------------------- */
+
+
+/* Modules 轉場 -------------------- */
+
+
+/* State ----------------------- */
+
+
+
+/* RWD --------------------------- */
+
