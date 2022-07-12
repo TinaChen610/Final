@@ -29,26 +29,156 @@ img {
   margin-right: -12px;
 }
 
-/* 
-  pdf: #333
-  pf: #dd1f8e
-  ps: #00a7e2
-  dw: #84c922
-  ai: #ee9a10
-  ae: #620294
-*/
+/* layout ---------------- */
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.nav {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  margin-top: -100px;
+  z-index: 1;
+}
+
+.slide-ls {
+  display: flex;
+  width: 300vw;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slide-item {
+  width: 100vw;
+  height: 100vh;
+  padding: 3em 5em;
+}
+
+
+.slide-item-pdf {
+  background-color: #333;
+}
+
+.slide-item-pr {
+  background-color: #dd1f8e;
+}
+
+.slide-item-ps {
+  background-color: #00a7e2;
+}
+
+.slide-item-dw {
+  background-color: #84c922;
+}
+
+.slide-item-ai {
+  background-color: #ee9a10;
+}
+
+.slide-item-ae {
+  background-color: #620294;
+}
+
+.nav-btn {
+  display: block;
+  border: none;
+  width: 15px;
+  height: 15px;
+  text-indent: -9999px;
+  background-color: rgba(255, 255, 255, .3);
+  margin: 15px;
+}
+
+.nav-btn:hover {
+  background-color: #fff;
+}
+
+.pd {
+  width: 50%;
+}
+
+.pd-tit {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 1em 0;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.pd-desc {
+  color: #fff;
+  line-height: 1.7;
+  margin: 1em 0;
+  text-align: justify;
+}
+
+.pd-ls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pd-item {
+  width: 33.3333%;
+  padding: 12px;
+}
+
+.pd-item > a {
+  display: block;
+  -webkit-box-reflect: below 0 linear-gradient(0, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, 0)50%)
+}
+
+
 
 /* Modules 覆蓋 -------------------- */
+.hover-overlay {
+  position: relative;
+}
 
+.hover-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0);
+  width: 100%;
+  height: 100%;
+}
+
+.hover-overlay:hover::after {
+  background-color: rgba(0,0,0,.5);
+}
 
 /* Modules 圖標 -------------------- */
+.hover-icon i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2em;
+  margin-left: -1rem;
+  margin-top: -1rem;
+  transform: scale(0);
+  z-index: 1;
+}
 
+.hover-icon:hover i {
+  transform: scale(1);
+}
 
 /* Modules 縮放影像 -------------------- */
 
 
 /* Modules 轉場 -------------------- */
-
+.hover-transition::after,
+.hover-transition i {
+  transition-duration: .5s;
+}
 
 /* State ----------------------- */
 
