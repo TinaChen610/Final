@@ -52,12 +52,15 @@ img {
   position: absolute;
   left: 0;
   top: 0;
+  /* transition-duration: .5s; */
+  transition:all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 .slide-item {
   width: 100vw;
   height: 100vh;
   padding: 3em 5em;
+  overflow: auto;
 }
 
 
@@ -189,8 +192,48 @@ img {
 }
 
 /* State ----------------------- */
+.js-nav-btn {
+  background-color: #fff !important;
+}
 
+.js-nav {
+  background-color: rgba(0, 0, 0, .7) !important;
+}
 
 
 /* RWD --------------------------- */
+@media screen and (max-width: 1024px) {
+  .pd {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .nav {
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .slide-item {
+    padding: 4em 2em 2em;
+  }
+  
+  .pd {
+    width: auto;
+  }
+  .pd-head {
+    text-align: center;
+  }
+
+  .pd-item {
+    width: 50%;
+  }
+}
+
+
 
